@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 14px;
+        color: white;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 15px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(0, 0%, 8%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .card {
+        background-color: hsl(0, 0%, 12%);
+        padding: 35px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 15px;
+      }
+      .image {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+      }
+
+      .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      p {
+        color: hsl(75, 94%, 57%);
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      ul li {
+        list-style: none;
+
+        padding: 13px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      ul a {
+        border-radius: 5px;
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+        background-color: hsl(0, 0%, 20%);
+        transition: all 0.3s ease-in-out;
+      }
+
+      ul a:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 20%);
+      }
+
+      @media screen and (max-width: 500px) {
+        p {
+        margin-bottom: 25px;
+        margin-top: 5px;
+      }
+
+      .image {
+        margin-bottom: 25px;
+      }
+
+      .card {
+        padding: 30px 30px;
+
+        border-radius: 12px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img src="./assets/images/avatar-jessica.jpeg" alt="" />
+        </div>
+
+        <div>
+          <h1>Jessica Randall</h1>
+          <p>London, United Kingdom</p>
+        </div>
+
+        <h3>"Front-end developer and avid reader."</h3>
+
+        <ul>
+          <a href="https://github.com/ashaduzzaman2002" target="blank">
+            <li>GitHub</li>
+          </a>
+          <a
+            href="https://www.frontendmentor.io/profile/ashaduzzaman2002"
+            target="blank"
+          >
+            <li>Frontend Mentor</li></a
+          >
+          <a
+            href="https://www.linkedin.com/in/ashaduzzaman-mondal-b68699214/"
+            target="blank"
+          >
+            <li>LinkedIn</li>
+          </a>
+          <a href="#"> <li>Twitter</li></a>
+          <a href="#"><li>Instagram</li></a>
+        </ul>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/ashaduzzaman2002">Ashaduzzaman</a>.
+      </div>
+    </div>
+  </body>
+</html>
